@@ -4,6 +4,9 @@ const button = document.getElementById('loginBtn');
 // Get the modal element.
 const modal = document.getElementsByClassName('modal')[0];
 
+// Get the sign up button.
+const modalSignUp = document.getElementById('modal-signUp');
+
 // Get the <span> element that closes the modal
 const closeModalBtn = document.getElementById('closeModalBtn');
 
@@ -23,3 +26,20 @@ document.addEventListener('click', (event) => {
         modal.classList.add('hidden');
     }
 });
+
+// Add same logic to the sign up button.
+const signUpButton = document.getElementById('signUp'); 
+
+// When user clicks the sign up button, open the sign up modal.
+signUpButton.addEventListener('click', () => {
+    modalSignUp.classList.remove('hidden');
+});
+
+// When user clicks outside the sign up modal, close it.
+document.addEventListener('click', (event) => {
+    if (!modalSignUp.contains(event.target) && !signUpButton.contains(event.target)) {
+        modalSignUp.classList.add('hidden');
+    }
+});
+
+

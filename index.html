@@ -7,15 +7,30 @@
 </head>
 <body>
     <header>
-        <h2>Bienvenido</h2>
-        <button id="loginBtn">Iniciar sesión</button>
+        <h2>The Odin Project.</h2>
+        <div class="buttons">
+            <button id="loginBtn">Iniciar sesión</button>
+            <button id="signUp">Registrarse</button>
+        </div>
     </header>
+    <!-- modal for loging in -->
     <div class="modal hidden">
+        <h3>Ingrese los datos.</h3>
         <span class="close-modal" id="closeModalBtn">&times;</span>
         <input type="text" name="nombre" id="nombre" placeholder="Nombre">
         <input type="password" name="password" id="password" placeholder="Contraseña"> 
         <button id="submitBtn">Enviar</button>
     </div>
+
+    <!-- modal for signing up -->
+     <div class="modal-signUp hidden" id="modal-signUp">
+        <h3>Regístrese.</h3>
+        <span class="close-modal" id="closeSignUpBtn">&times;</span>
+        <input type="text" name="newNombre" id="newNombre" placeholder="Nombre">
+        <input type="email" name="email" id="email" placeholder="Correo electrónico">
+        <input type="password" name="newPassword" id="newPassword" placeholder="Contraseña"> 
+        <button id="createAccountBtn">Crear cuenta</button>
+     </div>
 
     <script src="index.js"></script>
 </body>

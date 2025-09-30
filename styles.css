@@ -40,6 +40,11 @@ button:hover {
     height: calc(100vh - 60px);
 }
 
+h3 {
+    margin: 0;
+    color: #333;
+}
+
 .modal {
     position: absolute;
     top: 50%;
@@ -54,7 +59,7 @@ button:hover {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 15px;
+    gap: 20px;
 }
 
 input {
@@ -74,9 +79,7 @@ input::placeholder {
     color: #999;
 }
 
-.hidden {
-    display: none;
-}
+
 
 .close-modal {
     position: absolute;
@@ -84,4 +87,35 @@ input::placeholder {
     right: 15px;
     font-size: 24px;
     cursor: pointer;
+    color: rgba(0, 0, 0, 0.425);
+}
+
+.buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.modal-signUp {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #fff;
+    padding: 20px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    height: 60vh;
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.modal-signUp input {
+    width: 70%;
+}
+
+.hidden {
+    display: none;
 }
